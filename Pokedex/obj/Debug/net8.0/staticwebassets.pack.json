@@ -1,0 +1,57 @@
+{
+  "Files": [
+    {
+      "Id": "/home/jason/RiderProjects/Pokedex/Pokedex/obj/Debug/net8.0/scopedcss/projectbundle/Pokedex.bundle.scp.css",
+      "PackagePath": "staticwebassets/Pokedex.bundle.scp.css"
+    },
+    {
+      "Id": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/images/download.svg",
+      "PackagePath": "staticwebassets/images/download.svg"
+    },
+    {
+      "Id": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/images/menu.png",
+      "PackagePath": "staticwebassets/images/menu.png"
+    },
+    {
+      "Id": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/images/pokeboll-icon.svg",
+      "PackagePath": "staticwebassets/images/pokeboll-icon.svg"
+    },
+    {
+      "Id": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/images/pokedex_img.png",
+      "PackagePath": "staticwebassets/images/pokedex_img.png"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.Pokedex.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.Pokedex.props",
+      "PackagePath": "build\\Pokedex.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Pokedex.props",
+      "PackagePath": "buildMultiTargeting\\Pokedex.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Pokedex.props",
+      "PackagePath": "buildTransitive\\Pokedex.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

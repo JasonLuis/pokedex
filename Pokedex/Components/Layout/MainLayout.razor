@@ -1,0 +1,25 @@
+﻿@inherits LayoutComponentBase
+@using BlazorComponentUtilities
+
+<div class="@_css">
+    <main>
+        <nav class="w-full pt-11 px-14 flex justify-between items-center">
+            <img src="images/pokedex_img.png" alt="" class="w-[192px] h-[61px]"/>
+            <button>
+                <img src="images/menu.png" alt="" />
+            </button>
+        </nav>
+        @Body
+    </main>
+</div>
+
+@code{
+
+    private string _css = new CssBuilder()
+        .AddClass("bg-[#DD092F]")
+        //.AddClass("bg-[#F6F8FC]")
+        .AddClass("h-screen min-h-full")
+        .Build();
+
+    
+}
