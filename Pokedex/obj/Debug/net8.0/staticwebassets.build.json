@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ESK/KQvXUQTPC619DRSckGgHedB1Hb3HiJiXL2THk5U=",
+  "Hash": "vZ0bnMCpj6FY9HjRYpdw23E0CvR92hxLs/EFTX0K0B4=",
   "Source": "Pokedex",
   "BasePath": "_content/Pokedex",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "Pokedex/wwwroot",
+      "Name": "Pokedex\\wwwroot",
       "Source": "Pokedex",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/",
+      "ContentRoot": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\wwwroot\\",
       "BasePath": "_content/Pokedex",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/home/jason/RiderProjects/Pokedex/Pokedex/obj/Debug/net8.0/scopedcss/bundle/Pokedex.styles.css",
+      "Identity": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Pokedex.styles.css",
       "SourceId": "Pokedex",
       "SourceType": "Computed",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/obj/Debug/net8.0/scopedcss/bundle/",
+      "ContentRoot": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Pokedex",
       "RelativePath": "Pokedex.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/jason/RiderProjects/Pokedex/Pokedex/obj/Debug/net8.0/scopedcss/bundle/Pokedex.styles.css"
+      "OriginalItemSpec": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Pokedex.styles.css"
     },
     {
-      "Identity": "/home/jason/RiderProjects/Pokedex/Pokedex/obj/Debug/net8.0/scopedcss/projectbundle/Pokedex.bundle.scp.css",
+      "Identity": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Pokedex.bundle.scp.css",
       "SourceId": "Pokedex",
       "SourceType": "Computed",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/obj/Debug/net8.0/scopedcss/projectbundle/",
+      "ContentRoot": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Pokedex",
       "RelativePath": "Pokedex.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/jason/RiderProjects/Pokedex/Pokedex/obj/Debug/net8.0/scopedcss/projectbundle/Pokedex.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Pokedex.bundle.scp.css"
     },
     {
-      "Identity": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/app.css",
+      "Identity": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\wwwroot\\app.css",
       "SourceId": "Pokedex",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/",
+      "ContentRoot": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\wwwroot\\",
       "BasePath": "_content/Pokedex",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -71,51 +71,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/app.css"
+      "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/bootstrap/bootstrap.min.css",
+      "Identity": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\wwwroot\\favicon.png",
       "SourceId": "Pokedex",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/",
-      "BasePath": "_content/Pokedex",
-      "RelativePath": "bootstrap/bootstrap.min.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/bootstrap/bootstrap.min.css"
-    },
-    {
-      "Identity": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/bootstrap/bootstrap.min.css.map",
-      "SourceId": "Pokedex",
-      "SourceType": "Discovered",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/",
-      "BasePath": "_content/Pokedex",
-      "RelativePath": "bootstrap/bootstrap.min.css.map",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/bootstrap/bootstrap.min.css.map"
-    },
-    {
-      "Identity": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/favicon.png",
-      "SourceId": "Pokedex",
-      "SourceType": "Discovered",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/",
+      "ContentRoot": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\wwwroot\\",
       "BasePath": "_content/Pokedex",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -128,13 +90,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/favicon.png"
+      "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/images/download.svg",
+      "Identity": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\wwwroot\\images\\download.svg",
       "SourceId": "Pokedex",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/",
+      "ContentRoot": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\wwwroot\\",
       "BasePath": "_content/Pokedex",
       "RelativePath": "images/download.svg",
       "AssetKind": "All",
@@ -147,13 +109,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/download.svg"
+      "OriginalItemSpec": "wwwroot\\images\\download.svg"
     },
     {
-      "Identity": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/images/menu.png",
+      "Identity": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\wwwroot\\images\\menu.png",
       "SourceId": "Pokedex",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/",
+      "ContentRoot": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\wwwroot\\",
       "BasePath": "_content/Pokedex",
       "RelativePath": "images/menu.png",
       "AssetKind": "All",
@@ -166,13 +128,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/menu.png"
+      "OriginalItemSpec": "wwwroot\\images\\menu.png"
     },
     {
-      "Identity": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/images/pokeboll-icon.svg",
+      "Identity": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\wwwroot\\images\\pokeboll-icon.svg",
       "SourceId": "Pokedex",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/",
+      "ContentRoot": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\wwwroot\\",
       "BasePath": "_content/Pokedex",
       "RelativePath": "images/pokeboll-icon.svg",
       "AssetKind": "All",
@@ -185,13 +147,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/pokeboll-icon.svg"
+      "OriginalItemSpec": "wwwroot\\images\\pokeboll-icon.svg"
     },
     {
-      "Identity": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/images/pokedex_img.png",
+      "Identity": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\wwwroot\\images\\pokedex_img.png",
       "SourceId": "Pokedex",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/",
+      "ContentRoot": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\wwwroot\\",
       "BasePath": "_content/Pokedex",
       "RelativePath": "images/pokedex_img.png",
       "AssetKind": "All",
@@ -204,7 +166,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/pokedex_img.png"
+      "OriginalItemSpec": "wwwroot\\images\\pokedex_img.png"
     }
   ]
 }

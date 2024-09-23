@@ -35,24 +35,27 @@
     ]
   },
   "packageFolders": {
-    "/home/jason/.nuget/packages/": {}
+    "C:\\Users\\jason\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/jason/RiderProjects/Pokedex/Pokedex/Pokedex.csproj",
+      "projectUniqueName": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\Pokedex.csproj",
       "projectName": "Pokedex",
-      "projectPath": "/home/jason/RiderProjects/Pokedex/Pokedex/Pokedex.csproj",
-      "packagesPath": "/home/jason/.nuget/packages/",
-      "outputPath": "/home/jason/RiderProjects/Pokedex/Pokedex/obj/",
+      "projectPath": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\Pokedex.csproj",
+      "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jason\\source\\repos\\pokedex\\Pokedex\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/jason/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -100,7 +103,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/jason/.dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

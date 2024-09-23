@@ -1,4 +1,4 @@
-using Pokedex.Components;
+using Pokedex;
 
 var builder = WebApplication.CreateBuilder(args);
 
