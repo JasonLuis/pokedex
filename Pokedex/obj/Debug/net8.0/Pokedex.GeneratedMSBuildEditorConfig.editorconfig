@@ -22,8 +22,12 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jason/source/repos/pokedex/Pokedex/Components/AppInput.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHBJbnB1dC5yYXpvcg==
+[C:/Users/jason/source/repos/pokedex/Pokedex/Components/AppInputText.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHBJbnB1dFRleHQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/source/repos/pokedex/Pokedex/Components/AppInputTextField.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHBJbnB1dFRleHRGaWVsZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/jason/source/repos/pokedex/Pokedex/Pages/Home.razor]

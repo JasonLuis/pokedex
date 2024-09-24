@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
 .decor-poke1 {
     background-image: url(images/pokeboll-icon.svg);
     background-repeat: no-repeat;
@@ -5,6 +7,7 @@
     height: 100vh;
     position: absolute;
     background-position: -90px -55px;
+    z-index: 1;
 }
 
 .decor-poke2 {
@@ -14,6 +17,7 @@
     height: 100vh;
     position: absolute;
     background-position: 75% -205px;
+    z-index: 1;
 }
 
 .decor-poke3 {
@@ -23,4 +27,17 @@
     height: 100vh;
     position: absolute;
     background-position: calc(100% + 144px) 143px;
+    z-index: 1;
+}
+
+input {
+    color: #C9B3B3 !important;
+    font-family: "Kumbh Sans" !important;
+    font-size: 20px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+    padding-left: 24px !important;
+    position: relative;
+    z-index: 10;
 }
