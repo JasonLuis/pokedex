@@ -1,0 +1,42 @@
+﻿@using BlazorComponentUtilities
+
+<div class="@_classCard">
+    <div class="w-full flex justify-between pl-4 pr-5">
+        <div class="flex gap-2 pt-4">
+            <div class="w-[50px] h-[21px] bg-[#BFC66B] rounded-[50px] @_classTextPokemonType">
+                Grass
+           </div>
+           <div class="w-[50px] h-[21px] bg-[#BFC66B] rounded-[50px] @_classTextPokemonType">
+                Poison
+           </div>
+       </div>
+        <div class="text-white font-[700] font-['Kumbh Sans'] font-[700] not-italic text-[15px] leading-normal pt-[15px] flex items-center ">
+           #001
+       </div>
+   </div>
+   <div class="flex h-full">
+        
+   </div>
+</div>
+
+@code {
+
+    private string _classCard => new CssBuilder()
+                                    .AddClass("w-[344px]")
+                                    .AddClass("h-[196px]")
+                                    .AddClass("shadow-card-info")
+                                    .AddClass("rounded-[20px]")
+                                    .AddClass("bg-[#77B35B]")
+                                    .Build();
+    
+
+    private string _classTextPokemonType => new CssBuilder()
+                                    .AddClass("text-white")
+                                    .AddClass("font-['Inter']")
+                                    .AddClass("text-[9px]")
+                                    .AddClass("not-italic")
+                                    .AddClass("font-[500]")
+                                    .AddClass("leading-normal")
+                                    .AddClass("flex items-center justify-center")
+                                    .Build();
+}
