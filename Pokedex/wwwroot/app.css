@@ -8,6 +8,7 @@
     position: absolute;
     background-position: -90px -55px;
     z-index: 1;
+    pointer-events: none;
 }
 
 .decor-poke2 {
@@ -18,6 +19,7 @@
     position: absolute;
     background-position: 75% -205px;
     z-index: 1;
+    pointer-events: none;
 }
 
 .decor-poke3 {
@@ -28,6 +30,7 @@
     position: absolute;
     background-position: calc(100% + 144px) 143px;
     z-index: 1;
+    pointer-events: none;
 }
 
 input {
