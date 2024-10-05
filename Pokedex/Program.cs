@@ -1,10 +1,19 @@
 using Pokedex;
+using Pokedex.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddScoped<PokemonService>();
+builder.Services.AddHttpClient("PokeAPI", client => {
+    //client.BaseAddress = new Uri(builder.Configuration["APIServer:Url"]!);
+    client.BaseAddress = new Uri("https://pokeapi.co/api/v2/");
+    client.DefaultRequestHeaders.Add("Accept", "application/json");
+});
+
 
 var app = builder.Build();
 

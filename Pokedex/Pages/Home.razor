@@ -1,5 +1,8 @@
 ﻿@page "/"
 
+@inject PokemonService pokemonService
+
+
 <div class="grid grid-cols-3 gap-4 max-w-[1200px] mx-auto">
     <div class="col-span-3">
         <div class="flex justify-center">
@@ -9,23 +12,53 @@
 
     <div class="col-span-3">
         <div class="flex gap-2 mt-5 ">
-            <AppInputTextField 
-                @bind-Value="_text"
-                Class="flex-1 h-[73px]"
-                Placeholder="search eg, ditto or pikachu..."
-                />
+            <AppInputTextField @bind-Value="_text"
+                               Class="flex-1 h-[73px]"
+                               Placeholder="search eg, ditto or pikachu..." />
             <button class="bg-[#FF5350] w-[81px] h-[73px] rounded-[10px] shadow-custom flex justify-center items-center">
                 <img src="/images/search.svg" alt="" />
             </button>
         </div>
-        
-    </div>
-    
-   <hr class="col-span-3" size="2" />
 
+    </div>
+
+    <hr class="col-span-3" size="2" />
+
+    <div class="col-span-3">@_link</div>
     <CardInfo />
 </div>
 
 @code {
     private string _text = string.Empty;
+    private string? _link = string.Empty;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        Console.WriteLine("OnInitializedAsync foi chamado");
+
+        if (pokemonService == null)
+        {
+            Console.WriteLine("pokemonService está nulo!");
+            return;
+        }
+
+        await this.GetNextLink();
+    }
+
+
+    private async Task GetNextLink()
+    {
+
+        var result = await pokemonService.GetNextLink();
+
+        if (result != null)
+        {
+            _link = result.Next;
+            Console.WriteLine("Testando a aplicação");
+            Console.WriteLine(_link);
+        }
+
+
+    }
 }
