@@ -1,9 +1,10 @@
 ﻿@page "/"
 
-@inject PokemonService pokemonService
+
+@inject PokemonAPI pokemonService
 
 
-<div class="grid grid-cols-3 gap-4 max-w-[1200px] mx-auto">
+<div class="grid grid-cols-3 gap-4 place-content-between max-w-[1100px] mx-auto">
     <div class="col-span-3">
         <div class="flex justify-center">
             <img src="images/pokedex_img.png" class="w-[495px] h-[152px]" />
@@ -24,13 +25,67 @@
 
     <hr class="col-span-3" size="2" />
 
-    <div class="col-span-3">@_link</div>
-    <CardInfo />
+    @foreach (var pokemon in _response)
+    {
+        <CardInfo Nome="@pokemon.Nome" Imagem="@pokemon.Imagem" Tipo="@pokemon.Habilidades" Id="@pokemon.Id" />
+    }
+    <div class="col-span-3">
+        <div class="flex justify-center gap-2 mb-5 mt-5">
+            <a href="#"
+               class="inline-flex items-center border border-indigo-300 px-3 py-1.5 rounded-md text-white bg-[#FF5350] hover:bg-white hover:text-[#FF5350]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18">
+                    </path>
+                </svg>
+                <span class="ml-1 font-bold text-lg"></span>
+            </a>
+            <a href="#"
+               class="inline-flex items-center border border-indigo-300 px-3 py-1.5 rounded-md text-white bg-[#FF5350] hover:bg-white hover:text-[#FF5350]">
+                <span class="mr-1 font-bold text-lg"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </div>
+    
 </div>
+
+<style scoped>
+
+    .buttons {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        width: 65%;
+        transform: translate(-57%, 0);
+        display: flex;
+        gap: 20px
+    }
+
+    .button {
+        width: 50%;
+        padding: 4%;
+        border: 2px solid #000;
+        border-radius: 5px;
+        font-size: clamp(8px, 5vw, 1rem);
+        font-weight: 600;
+        color: white;
+        background-color: #444;
+        box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+    }
+
+        .button:active {
+            box-shadow: inset -4px -4px #222;
+            font-size: 0.9rem;
+        }
+</style>
+
 
 @code {
     private string _text = string.Empty;
-    private string? _link = string.Empty;
+    private List<PokemonDetalhes> _response = new();
 
 
     protected override async Task OnInitializedAsync()
@@ -49,14 +104,11 @@
 
     private async Task GetNextLink()
     {
-
-        var result = await pokemonService.GetNextLink();
+        var result = await pokemonService.GetPokemon();
 
         if (result != null)
         {
-            _link = result.Next;
-            Console.WriteLine("Testando a aplicação");
-            Console.WriteLine(_link);
+            _response = result;
         }
 
 

@@ -3,31 +3,37 @@
 <div class="@_classCard">
     <div class="w-full flex justify-between pl-4 pr-5">
         <div class="flex gap-2 pt-4">
-            <div class="w-[50px] h-[21px] bg-[#BFC66B] rounded-[50px] @_classPokemonType">
-                Grass
-           </div>
-            <div class="w-[50px] h-[21px] bg-[#BFC66B] rounded-[50px] @_classPokemonType">
-                Poison
-           </div>
+            @foreach (var tipo in Tipo)
+            {
+                <div class="w-[50px] h-[21px] bg-[#BFC66B] rounded-[50px] @_classPokemonType">
+                    @tipo.Tipo
+                </div>
+            }
        </div>
         <div class="text-white font-[700] font-['Kumbh Sans'] font-[700] not-italic text-[15px] leading-normal pt-[15px] flex items-center ">
-           #001
+            @($"#{Id:D3}")
        </div>
    </div>
-   <div class="flex h-full pr-[13px]">
+   <div class="flex h-full pr-1">
         <div class="pl-4">
-            <h3 class="@_className">Bulbasaur</h3>
+            <h3 class="@_className">@Nome</h3>
             <p class="@_classDescription mt-1">A strange seed was planted on its back at birth. the plant sprouts and grows with this pokémon.</p>
             <button class="@_classBtn mt-3" style="cursor:pointer">
                 Know more
             </button>
         </div>
 
-        <img src="https://s3-alpha-sig.figma.com/img/85d5/1a17/73f17cab53c3c5e75253c50e3006cc1c?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PV36eaFKvMkP8oCX0Vy0HgReFi2HCj0He9IGHPL-cQ5z~CoRTyzx6oKN085O1wWDgycLsubMa7yfGsgQHY2KO3-lCNIeV5YLOPJvTnTo7Y9C5JVUJaG3qG03gkucn1U8Kq52ovMpr5mVMKPF73q1eVIYj6eXWlGs7J712W-HEvCkN3x7YpNjHAWYUpPxXrX4q~Tcwcy4c7nM6WA9wFUWaDf1roGDDWoIffT~caH9LP1kWNZL8YfaP8Pf3qLZotx7APZixQASFdGMjLQsMIkaRtruN5Rb5dlBF4AF4djxq5rsd~dKdp0aTPkOophYxct1e2fBdH~te8Bmqu1N6gNb9Q__" alt="Alternate Text" class="max-w-[123px] max-h-[120px]"/>
+        <img src="@Imagem" alt="Alternate Text" class="max-w-[120px] max-h-[120px] ml-2" />
    </div>
 </div>
 
 @code {
+
+    [Parameter] public int Id { get; set; }
+    [Parameter] public string Nome { get; set; } = string.Empty;
+    [Parameter] public String Imagem { get; set; } = string.Empty;
+    [Parameter] public List<Habilidades> Tipo { get; set; } = [];
+
 
     private string _classCard => new CssBuilder()
                                     .AddClass("w-[344px]")
@@ -36,7 +42,6 @@
                                     .AddClass("rounded-[20px]")
                                     .AddClass("bg-[#77B35B]")
                                     .Build();
-
 
     private string _classPokemonType => new CssBuilder()
                                     .AddClass("text-white")
