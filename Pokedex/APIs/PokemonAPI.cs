@@ -13,17 +13,31 @@ public class PokemonAPI
     }
 
 
-    public async Task<List<PokemonDetalhes>> GetPokemon()
+    public async Task<(List<PokemonDetalhes> Pokemons, string Anterior, string Proximo)> GetPokemon(string url)
     {
-        var response = await _httpClient.GetFromJsonAsync<ListarPokemonsResponse>("pokemon?limit=9&offset=0");
+        ListarPokemonsResponse? response;
+
+        if (url is null || url == string.Empty)
+        {
+            response = await _httpClient.GetFromJsonAsync<ListarPokemonsResponse>("pokemon?limit=9&offset=0");
+        } else
+        {
+            response = await _httpClient.GetFromJsonAsync<ListarPokemonsResponse>(url);
+        }
+
+        string Anterior = response!.Anterior!;
+        string Proximo = response!.Proximo!;
+
 
         List<PokemonDetalhes> pokemons = [];
 
         var tasks = response!.Resultado.Select(x => GetAboutPokemon(x.Url));
         var results = await Task.WhenAll(tasks);
         pokemons.AddRange(results);
+        
+       
 
-        return pokemons;
+        return (pokemons, Anterior, Proximo);
     }
 
     public async Task<PokemonDetalhes> GetAboutPokemon(string url)

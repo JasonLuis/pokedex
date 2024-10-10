@@ -14,7 +14,7 @@ public class ListarPokemonsResponse
     public string? Anterior { get; set; }
 
     [JsonPropertyName("results")]
-    public PokemonItemResponse[] Resultado { get; set; } = Array.Empty<PokemonItemResponse>();
+    public PokemonItemResponse[] Resultado { get; set; } = Array.Empty<PokemonItemResponse>(); 
 }
 
 public class PokemonItemResponse {
