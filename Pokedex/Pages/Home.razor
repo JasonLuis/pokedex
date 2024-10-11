@@ -14,8 +14,9 @@
         <div class="flex gap-2 mt-5 ">
             <AppInputTextField @bind-Value="_text"
                                Class="flex-1 h-[73px]"
-                               Placeholder="search eg, ditto or pikachu..." />
-            <button class="bg-[#FF5350] w-[81px] h-[73px] rounded-[10px] shadow-custom flex justify-center items-center">
+                               Placeholder="search eg, ditto or pikachu..." 
+                               />
+            <button @onclick="() => GetPokemonByName()" class="bg-[#FF5350] w-[81px] h-[73px] rounded-[10px] shadow-custom flex justify-center items-center">
                 <img src="/images/search.svg" alt="" />
             </button>
         </div>
@@ -24,9 +25,23 @@
 
     <hr class="lg:col-span-3 md:col-span-2" size="2" />
 
+    @if (_response.Any() == false)
+    {
+        <div class="lg:col-span-3 md:col-span-2">
+            <Alert>No Pokémon found!</Alert>
+        </div>
+        
+    }
+
     @foreach (var pokemon in _response)
     {
-        <CardInfo Nome="@pokemon.Nome" Imagem="@pokemon.Imagem" Tipo="@pokemon.Habilidades" Id="@pokemon.Id" />
+        <CardInfo 
+            Id="@pokemon.Id"
+            Nome="@pokemon.Nome"
+            Imagem="@pokemon.Imagem"
+            Tipo="@pokemon.Habilidades"
+            Descricao="@pokemon.Descricao"
+            />
     }
     <div class="lg:col-span-3 md:col-span-2">
         <div class="flex justify-center gap-2 mb-5 mt-5">
@@ -52,7 +67,7 @@
     
 </div>
 
-<Loading Show="_loading" />
+<Loading Show="@_loading" />
 
 
 @code {
@@ -65,28 +80,45 @@
 
     protected override async Task OnInitializedAsync()
     {
-        Console.WriteLine("OnInitializedAsync foi chamado");
-
-        if (pokemonService == null)
-        {
-            Console.WriteLine("pokemonService está nulo!");
-            return;
-        }
-
+        _loading = true;
         await this.GetPokemons();
+        _loading = false;
     }
 
 
     private async Task GetPokemons(string url = "")
     {
-        Console.WriteLine("GetPokemons foi chamado");
-        _loading = true;
 
         var result = await pokemonService.GetPokemon(url);
         _response = result.Pokemons;
         _anterior = result.Anterior;
         _proximo = result.Proximo;
 
-        _loading = false;
+    }
+
+    private async Task OnInputChanged(ChangeEventArgs e)
+    {
+        _text = e.Value?.ToString() ?? string.Empty;
+        await GetPokemonByName();
+    }
+
+    private async Task GetPokemonByName()
+    {
+        if (_text != string.Empty) {
+            try
+            {
+                _response = await pokemonService.GetPokemonByName(_text.ToLower().Trim());
+            }
+            catch (Exception ex)
+            {
+                _response = new();
+                Console.WriteLine(ex.Message);
+            }
+
+            return;
+        }
+
+        Console.WriteLine("No value found");
+        await this.GetPokemons();
     }
 }

@@ -17,7 +17,9 @@
    <div class="flex h-full pr-1">
         <div class="pl-4">
             <h3 class="@_className">@Nome</h3>
-            <p class="@_classDescription mt-1">A strange seed was planted on its back at birth. the plant sprouts and grows with this pokémon.</p>
+            <p class="@_classDescription mt-1">
+                @_description
+            </p>
             <button class="@_classBtn mt-3" style="cursor:pointer">
                 Know more
             </button>
@@ -32,8 +34,11 @@
     [Parameter] public int Id { get; set; }
     [Parameter] public string Nome { get; set; } = string.Empty;
     [Parameter] public String Imagem { get; set; } = string.Empty;
+    [Parameter] public String Descricao { get; set; } = string.Empty;
     [Parameter] public List<Habilidades> Tipo { get; set; } = [];
+  
 
+    private string _description => Descricao.Length > 75 ? Descricao.Substring(0, 75) + "..." : Descricao;
 
     private string _classCard => new CssBuilder()
                                     .AddClass("lg:w-[344px] md:w-full")

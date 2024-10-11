@@ -1,4 +1,5 @@
 ﻿using Pokedex.APIs.ListarPokemons;
+using System;
 using System.Text.Json;
 
 namespace Pokedex.API;
@@ -31,7 +32,7 @@ public class PokemonAPI
 
         List<PokemonDetalhes> pokemons = [];
 
-        var tasks = response!.Resultado.Select(x => GetAboutPokemon(x.Url));
+        var tasks = response!.Resultado.Select(x => GetDetailsPokemon(x.Url));
         var results = await Task.WhenAll(tasks);
         pokemons.AddRange(results);
         
@@ -40,7 +41,7 @@ public class PokemonAPI
         return (pokemons, Anterior, Proximo);
     }
 
-    public async Task<PokemonDetalhes> GetAboutPokemon(string url)
+    public async Task<PokemonDetalhes> GetDetailsPokemon(string url)
     {
         var pokemonResponse = await _httpClient.GetStringAsync(url);
         
@@ -65,7 +66,7 @@ public class PokemonAPI
         .GetProperty("front_default")
         .GetString();
 
-        
+        pokemon.Descricao = await GetDescriptionPokemon(pokemon.Id);
 
         if (json.RootElement.TryGetProperty("types", out JsonElement typesElement))
         {
@@ -79,6 +80,38 @@ public class PokemonAPI
         return pokemon;
     }
 
+    public async Task<string> GetDescriptionPokemon(int id)
+    {
+        var pokemonResponse = await _httpClient.GetStringAsync($"https://pokeapi.co/api/v2/pokemon-species/{id}/");
+
+        var json = JsonDocument.Parse(pokemonResponse);
+
+        string description = string.Empty;
+
+        if (json.RootElement.TryGetProperty("flavor_text_entries", out JsonElement flavorTextElement))
+        {
+            foreach (JsonElement entry in flavorTextElement.EnumerateArray())
+            {
+                if (entry.GetProperty("language").GetProperty("name").GetString() == "en")
+                {
+                    description = entry.GetProperty("flavor_text").GetString()!;
+                    description = description.Replace("\f", " ");
+                    description = description.Replace("\n", " ");
+                    break;
+                }
+            }
+        }
+
+        return description;
+    }
+
+    public async Task<List<PokemonDetalhes>> GetPokemonByName(string name)
+    {
+        List<PokemonDetalhes> pokemons = [];
+        pokemons.Add(await GetDetailsPokemon($"https://pokeapi.co/api/v2/pokemon/{name}/"));
+
+        return pokemons;
+    }
 }
 
 
