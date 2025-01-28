@@ -9,39 +9,51 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Pokedex
 build_property.RootNamespace = Pokedex
-build_property.ProjectDir = C:\Users\jason\source\repos\pokedex\Pokedex\
+build_property.ProjectDir = /home/jason/RiderProjects/Pokedex/Pokedex/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\jason\source\repos\pokedex\Pokedex
+build_property.MSBuildProjectDirectory = /home/jason/RiderProjects/Pokedex/Pokedex
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/jason/source/repos/pokedex/Pokedex/App.razor]
+[/home/jason/RiderProjects/Pokedex/Pokedex/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jason/source/repos/pokedex/Pokedex/Components/AppInputText.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHBJbnB1dFRleHQucmF6b3I=
+[/home/jason/RiderProjects/Pokedex/Pokedex/Components/Alert.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BbGVydC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jason/source/repos/pokedex/Pokedex/Components/AppInputTextField.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHBJbnB1dFRleHRGaWVsZC5yYXpvcg==
+[/home/jason/RiderProjects/Pokedex/Pokedex/Components/AppInputText.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHBJbnB1dFRleHQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jason/source/repos/pokedex/Pokedex/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+[/home/jason/RiderProjects/Pokedex/Pokedex/Components/AppInputTextField.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHBJbnB1dFRleHRGaWVsZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jason/source/repos/pokedex/Pokedex/Routes.razor]
+[/home/jason/RiderProjects/Pokedex/Pokedex/Components/CardInfo.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9DYXJkSW5mby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jason/RiderProjects/Pokedex/Pokedex/Components/Loading.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Mb2FkaW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jason/RiderProjects/Pokedex/Pokedex/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jason/RiderProjects/Pokedex/Pokedex/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Um91dGVzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jason/source/repos/pokedex/Pokedex/_Imports.razor]
+[/home/jason/RiderProjects/Pokedex/Pokedex/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jason/source/repos/pokedex/Pokedex/Layout/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-vggk56jzt3
+[/home/jason/RiderProjects/Pokedex/Pokedex/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-5iilqkssuf
