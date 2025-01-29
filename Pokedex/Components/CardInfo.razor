@@ -1,4 +1,5 @@
 ﻿@using BlazorComponentUtilities
+@inject NavigationManager NavigationManager
 
 <div class="@_classCard">
     <div class="w-full flex justify-between pl-4 pr-5">
@@ -20,7 +21,7 @@
             <p class="@_classDescription mt-1">
                 @_description
             </p>
-            <button class="@_classBtn mt-3" style="cursor:pointer">
+            <button class="@_classBtn mt-3" style="cursor:pointer" @onclick="() => Info()">
                 Know more
             </button>
         </div>
@@ -87,4 +88,11 @@
                     .AddClass("not-italic")
                     .AddClass("leading-normal")
                     .Build();
+
+
+    private void Info()
+    {
+        NavigationManager.NavigateTo("/info");
+    }
+    
 }
