@@ -1,12 +1,100 @@
-@page "/info"
+@page "/info/{Id:int}"
+
+@using BlazorComponentUtilities
+
 <div class="flex !justify-center mx-auto max-w-[100%] md:max-w-[1100px]">
     
-    <div class="w-5/6 min-h-[678px] rounded-[20px] bg-[#77B35B]">
+    <div class="w-5/6 min-h-[678px] rounded-[20px] bg-[#77B35B] flex pl-[78px] pt-[29px] pr-[40px]">
         
+            <img class="w-[470px] h-[483px]" 
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif" alt="pokemon"/>
+        
+            <div>
+                <p class="text-[#fff] text-[15px] font-bold">#001</p>
+                <h3 class="text-[#fff] text-[40px] font-bold">Bulbasaur</h3>
+                <div class="flex gap-2">
+                    <BtnType Class="mt-3">
+                        Gass
+                    </BtnType>
+                    <BtnType Class="mt-3">
+                        Poison
+                    </BtnType>
+                </div>
+                <p class="text-[#fff] text-[13px] font-normal mt-[19px]">
+                    A strange seed was planted on its back at birth. the plant sprouts and grows with this pokémon.
+                </p>
+                
+                <div class="flex justify-between mt-8">
+                    <StatsBox>
+                        <span>
+                            <strong>Heigth</strong>
+                        </span>
+                        <span>0.7m</span>
+                    </StatsBox>
+                    <StatsBox>
+                        <span>
+                            <strong>Weight</strong>
+                        </span>
+                        <span>0.7m</span>
+                    </StatsBox>
+                </div>
+            
+                <h4 class="text-white font-bold text-[22px] mt-8">Stats</h4>
+                <div class="flex gap-2 flex-wrap">
+                    <StatsBox Class="mt-3" Stats="StatsType.HP">
+                        <span>
+                            <strong>HP</strong>
+                        </span>
+                        <span>70</span>
+                    </StatsBox>
+                    <StatsBox Class="mt-3" Stats="StatsType.ATK">
+                        <span>
+                            <strong>ATK</strong>
+                        </span>
+                        <span>70</span>
+                    </StatsBox>
+                    <StatsBox Class="mt-3" Stats="StatsType.DEF">
+                        <span>
+                            <strong>DEF</strong>
+                        </span>
+                        <span>70</span>
+                    </StatsBox>
+                    <StatsBox Class="mt-3" Stats="StatsType.SPA">
+                        <span>
+                            <strong>SpA</strong>
+                        </span>
+                        <span>70</span>
+                    </StatsBox>
+                    <StatsBox Class="mt-3" Stats="StatsType.SpD">
+                        <span>
+                            <strong>SpD</strong>
+                        </span>
+                        <span>70</span>
+                    </StatsBox>
+                    <StatsBox Class="mt-3" Stats="StatsType.SPD">
+                        <span>
+                            <strong>SPD</strong>
+                        </span>
+                        <span>70</span>
+                    </StatsBox>
+                </div>
+
+                <h4 class="text-white font-bold text-[22px] mt-8">Abilities</h4>
+                <div class="flex justify-between mt-5">
+                    <StatsBox>
+                        <div class="flex justify-center">Overgrow</div>
+                    </StatsBox>
+                    <StatsBox>
+                        <div class="flex justify-center">Chlorophyll</div>
+                    </StatsBox>
+                </div>
+            </div>
     </div>
-    
 </div>
 
 @code {
+
+    [Parameter] public int Id { get; set; }
+
     
 }

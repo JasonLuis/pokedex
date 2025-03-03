@@ -1,0 +1,28 @@
+@using BlazorComponentUtilities
+
+<div class="@_css">
+    @ChildContent
+</div>
+
+@code {
+    
+    [Parameter] public RenderFragment ChildContent { get; set; }
+    [Parameter] public string? Class { get; set; } = "";
+    [Parameter] public StatsType? Stats { get; set; } = StatsType.Default;
+    
+    private string _css => new CssBuilder()
+        .AddClass("flex justify-between items-center")
+        .AddClass("w-[160px] h-[38px]")
+        .AddClass("px-[12px] gap-[37px]")
+        .AddClass("text-white")
+        .AddClass("rounded-[5px]")
+        .AddClass("bg-[#BFC66B]", Stats == StatsType.Default)
+        .AddClass("bg-[#DF2140]", Stats == StatsType.HP)
+        .AddClass("bg-[#FF994D]", Stats == StatsType.ATK)
+        .AddClass("bg-[#EECD3D]", Stats == StatsType.DEF)
+        .AddClass("bg-[#85DDFF]", Stats == StatsType.SPA)
+        .AddClass("bg-[#96DA83]", Stats == StatsType.SpD)
+        .AddClass("bg-[#FB94A8]", Stats == StatsType.SPD)
+        .AddClass(Class)
+        .Build();
+}

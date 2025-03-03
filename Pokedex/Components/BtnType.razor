@@ -1,0 +1,25 @@
+@using BlazorComponentUtilities
+
+<button class="@_classBtn mt-3">
+    @ChildContent
+</button>
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter] 
+    public string? Class { get; set; } = "";
+    
+    private string _classBtn => new CssBuilder()
+        .AddClass("w-[87px] h-[28px]")
+        .AddClass("rounded-[50px]")
+        .AddClass("bg-[#BFC66B]")
+        .AddClass("text-white")
+        .AddClass("text-[9px]")
+        .AddClass("font-[500]")
+        .AddClass("not-italic")
+        .AddClass("leading-normal")
+        .AddClass(Class)
+        .Build();
+}

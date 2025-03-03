@@ -34,12 +34,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHBJbnB1dFRleHRGaWVsZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/jason/RiderProjects/Pokedex/Pokedex/Components/BtnType.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9CdG5UeXBlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/jason/RiderProjects/Pokedex/Pokedex/Components/CardInfo.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9DYXJkSW5mby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/jason/RiderProjects/Pokedex/Pokedex/Components/Loading.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Mb2FkaW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jason/RiderProjects/Pokedex/Pokedex/Components/StatsBox.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TdGF0c0JveC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/jason/RiderProjects/Pokedex/Pokedex/Pages/Home.razor]

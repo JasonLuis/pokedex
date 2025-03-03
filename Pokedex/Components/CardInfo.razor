@@ -21,7 +21,7 @@
             <p class="@_classDescription mt-1">
                 @_description
             </p>
-            <button class="@_classBtn mt-3" style="cursor:pointer" @onclick="() => Info()">
+            <button class="@_classBtn mt-3" style="cursor:pointer" @onclick="() => Info(Id)">
                 Know more
             </button>
         </div>
@@ -37,62 +37,62 @@
     [Parameter] public String Imagem { get; set; } = string.Empty;
     [Parameter] public String Descricao { get; set; } = string.Empty;
     [Parameter] public List<Habilidades> Tipo { get; set; } = [];
-  
+
 
     private string _description => Descricao.Length > 75 ? Descricao.Substring(0, 75) + "..." : Descricao;
 
     private string _classCard => new CssBuilder()
-                                    .AddClass("lg:w-[344px] md:w-full")
-                                    .AddClass("h-[196px]")
-                                    .AddClass("shadow-card-info")
-                                    .AddClass("rounded-[20px]")
-                                    .AddClass("bg-[#77B35B]")
-                                    .Build();
+        .AddClass("lg:w-[344px] md:w-full")
+        .AddClass("h-[196px]")
+        .AddClass("shadow-card-info")
+        .AddClass("rounded-[20px]")
+        .AddClass("bg-[#77B35B]")
+        .Build();
 
     private string _classPokemonType => new CssBuilder()
-                                    .AddClass("text-white")
-                                    .AddClass("font-['Inter']")
-                                    .AddClass("text-[9px]")
-                                    .AddClass("not-italic")
-                                    .AddClass("font-[500]")
-                                    .AddClass("leading-normal")
-                                    .AddClass("flex items-center justify-center")
-                                    .Build();
+        .AddClass("text-white")
+        .AddClass("font-['Inter']")
+        .AddClass("text-[9px]")
+        .AddClass("not-italic")
+        .AddClass("font-[500]")
+        .AddClass("leading-normal")
+        .AddClass("flex items-center justify-center")
+        .Build();
 
     private string _className => new CssBuilder()
-                            .AddClass("text-white")
-                            .AddClass("font-['Kumbh Sans']")
-                            .AddClass("text-[27px]")
-                            .AddClass("not-italic")
-                            .AddClass("font-[700]")
-                            .AddClass("leading-normal")
-                            .Build();
+        .AddClass("text-white")
+        .AddClass("font-['Kumbh Sans']")
+        .AddClass("text-[27px]")
+        .AddClass("not-italic")
+        .AddClass("font-[700]")
+        .AddClass("leading-normal")
+        .Build();
 
 
     private string _classDescription => new CssBuilder()
-                    .AddClass("text-white")
-                    .AddClass("font-['Kumbh Sans']")
-                    .AddClass("text-[13px]")
-                    .AddClass("not-italic")
-                    .AddClass("font-[400]")
-                    .AddClass("leading-normal")
-                    .Build();
+        .AddClass("text-white")
+        .AddClass("font-['Kumbh Sans']")
+        .AddClass("text-[13px]")
+        .AddClass("not-italic")
+        .AddClass("font-[400]")
+        .AddClass("leading-normal")
+        .Build();
 
     private string _classBtn => new CssBuilder()
-                    .AddClass("w-[87px] h-[28px]")
-                    .AddClass("rounded-[50px]")
-                    .AddClass("bg-[#BFC66B]")
-                    .AddClass("text-white")
-                    .AddClass("text-[9px]")
-                    .AddClass("font-[500]")
-                    .AddClass("not-italic")
-                    .AddClass("leading-normal")
-                    .Build();
+        .AddClass("w-[87px] h-[28px]")
+        .AddClass("rounded-[50px]")
+        .AddClass("bg-[#BFC66B]")
+        .AddClass("text-white")
+        .AddClass("text-[9px]")
+        .AddClass("font-[500]")
+        .AddClass("not-italic")
+        .AddClass("leading-normal")
+        .Build();
 
 
-    private void Info()
+    private void Info(int id)
     {
-        NavigationManager.NavigateTo("/info");
+        NavigationManager.NavigateTo($"/info/{id}");
     }
-    
+
 }
