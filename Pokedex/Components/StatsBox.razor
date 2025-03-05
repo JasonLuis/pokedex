@@ -5,13 +5,14 @@
 </div>
 
 @code {
-    
+
     [Parameter] public RenderFragment ChildContent { get; set; }
     [Parameter] public string? Class { get; set; } = "";
     [Parameter] public StatsType? Stats { get; set; } = StatsType.Default;
-    
+    [Parameter] public bool? Center { get; set; } = false;
+
     private string _css => new CssBuilder()
-        .AddClass("flex justify-between items-center")
+        .AddClass("flex items-center")
         .AddClass("w-[160px] h-[38px]")
         .AddClass("px-[12px] gap-[37px]")
         .AddClass("text-white")

@@ -1,4 +1,5 @@
 ﻿using Pokedex.APIs.ListarPokemons;
+using Pokedex.APIs.PokemonInfo;
 using System;
 using System.Text.Json;
 
@@ -14,7 +15,8 @@ public class PokemonAPI
     }
 
 
-    public async Task<(List<PokemonDetalhes> Pokemons, string Anterior, string Proximo)> GetPokemon(string url)
+
+    public async Task<(List<PokemonDetalhes> Pokemons, string Anterior, string Proximo)> ListarPokemons(string url)
     {
         ListarPokemonsResponse? response;
 
@@ -32,7 +34,7 @@ public class PokemonAPI
 
         List<PokemonDetalhes> pokemons = [];
 
-        var tasks = response!.Resultado.Select(x => GetDetailsPokemon(x.Url));
+        var tasks = response!.Resultado.Select(x => GetPokemonDetalhes(x.Url));
         var results = await Task.WhenAll(tasks);
         pokemons.AddRange(results);
         
@@ -41,9 +43,12 @@ public class PokemonAPI
         return (pokemons, Anterior, Proximo);
     }
 
-    public async Task<PokemonDetalhes> GetDetailsPokemon(string url)
+
+    public async Task<PokemonDetalhes> GetPokemonDetalhes(string? url, int? id = null)
     {
-        var pokemonResponse = await _httpClient.GetStringAsync(url);
+        var urlPokemon = url ?? $"https://pokeapi.co/api/v2/pokemon/{id}/";
+
+        var pokemonResponse = await _httpClient.GetStringAsync(urlPokemon);
         
         PokemonDetalhes pokemon = new();
         var json = JsonDocument.Parse(pokemonResponse);
@@ -66,21 +71,66 @@ public class PokemonAPI
         .GetProperty("front_default")
         .GetString();
 
-        pokemon.Descricao = await GetDescriptionPokemon(pokemon.Id);
+        pokemon.Descricao = await GetDescricaoPokemon(pokemon.Id);
 
-        if (json.RootElement.TryGetProperty("types", out JsonElement typesElement))
+        pokemon.Altura = (decimal)json.RootElement.GetProperty("height").GetInt32() / 10; 
+        pokemon.Peso = (decimal)json.RootElement.GetProperty("weight").GetDecimal() / 10;
+
+        if (json.RootElement.TryGetProperty("types", out JsonElement typesElementToTypes))
         {
-            foreach (JsonElement typeEntry in typesElement.EnumerateArray())
+            foreach (JsonElement typeEntry in typesElementToTypes.EnumerateArray())
             {
                 string tipo = typeEntry.GetProperty("type").GetProperty("name").GetString()!;
-                pokemon.Habilidades.Add(new Habilidades() { Tipo = tipo });
+                pokemon.Tipos.Add(new Tipos() { Tipo = tipo });
             }
+        }
+
+        if (json.RootElement.TryGetProperty("abilities", out JsonElement typesElementToAbility))
+        {
+            foreach (JsonElement typeEntry in typesElementToAbility.EnumerateArray())
+            {
+                string habilidade = typeEntry.GetProperty("ability").GetProperty("name").GetString()!;
+                pokemon.Habilidades.Add(new Habilidades() { Habilidade = habilidade });
+            }
+        }
+
+        if (json.RootElement.TryGetProperty("stats", out JsonElement typesElementToStats))
+        {
+            var estatisticas = new Estatisticas();
+            foreach (JsonElement typeEntry in typesElementToStats.EnumerateArray())
+            {
+                string stat = typeEntry.GetProperty("stat").GetProperty("name").GetString()!;
+                int valor = typeEntry.GetProperty("base_stat").GetInt32();
+                switch (stat)
+                {
+                    case "hp":
+                        estatisticas.HP = valor;
+                        break;
+                    case "attack":
+                        estatisticas.Ataque = valor;
+                        break;
+                    case "defense":
+                        estatisticas.Defesa = valor;
+                        break;
+                    case "special-attack":
+                        estatisticas.AtaqueEspecial = valor;
+                        break;
+                    case "special-defense":
+                        estatisticas.DefesaEspecial = valor;
+                        break;
+                    case "speed":
+                        estatisticas.Velocidade = valor;
+                        break;
+                }
+            }
+            
+            pokemon.Estatisticas = estatisticas;
         }
 
         return pokemon;
     }
 
-    public async Task<string> GetDescriptionPokemon(int id)
+    public async Task<string> GetDescricaoPokemon(int id)
     {
         var pokemonResponse = await _httpClient.GetStringAsync($"https://pokeapi.co/api/v2/pokemon-species/{id}/");
 
@@ -105,10 +155,10 @@ public class PokemonAPI
         return description;
     }
 
-    public async Task<List<PokemonDetalhes>> GetPokemonByName(string name)
+    public async Task<List<PokemonDetalhes>> GetPokemonPorNome(string name)
     {
         List<PokemonDetalhes> pokemons = [];
-        pokemons.Add(await GetDetailsPokemon($"https://pokeapi.co/api/v2/pokemon/{name}/"));
+        pokemons.Add(await GetPokemonDetalhes($"https://pokeapi.co/api/v2/pokemon/{name}/"));
 
         return pokemons;
     }

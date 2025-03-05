@@ -7,6 +7,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Compile Remove="APIs\PokemonInfo\PokemonInfo.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
       <Content Remove="wwwroot\images\pokeball-icon 3.png" />
       <Content Remove="wwwroot\images\pokeball-icon 3.svg" />
       <Content Remove="wwwroot\images\pokemon-icon1.svg" />

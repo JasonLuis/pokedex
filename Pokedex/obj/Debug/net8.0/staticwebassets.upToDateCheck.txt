@@ -1,0 +1,8 @@
+wwwroot\app.css
+wwwroot\favicon.png
+wwwroot\images\download.svg
+wwwroot\images\image-example.gif
+wwwroot\images\menu.png
+wwwroot\images\pokeboll-icon.svg
+wwwroot\images\pokedex_img.png
+wwwroot\images\search.svg
