@@ -5,12 +5,12 @@
 @using BlazorComponentUtilities
 @using Pokedex.APIs.PokemonInfo
 
-<div class="flex !justify-center mx-auto max-w-[100%] md:max-w-[1100px]">
+<div class="mx-auto max-w-[100%] max-w-[1071px]">
 
-    <div class="w-5/6 min-h-[678px] rounded-[20px] bg-[#77B35B] flex items-center gap-2 px-[20px] py-[29px] flex-wrap md:flex-nowrap
- justify-center md:justify-normal">
+    <div class="w-[380px] sm:w-5/6 mx-auto rounded-[20px]
+        bg-[#77B35B] flex items-center gap-2 px-[20px] py-[29px] flex-wrap lg:flex-nowrap justify-center md:justify-normal">
 
-        <img class="w-[450px] h-[483px]"
+        <img class="sm:w-[450px] sm:h-[483px] w-[200px] min-h-[205px]"
              src="@_pokemonDetalhes.Imagem" alt="pokemon" />
 
         <div>
@@ -92,6 +92,19 @@
                     </StatsBox>
                 }
             </div>
+        </div>
+    </div>
+
+    <div class="w-5/6 mx-auto px-[30px] mt-8 font-['Kumbh Sans']">
+        <h2 class="text-white text-[42px] font-bold">Evolutions</h2>
+        <div class="flex justify-center">
+
+            <img src="#" alt="Alternate Text" />
+            <img src="#" alt="Alternate Text" />
+            <img src="#" alt="Alternate Text" />
+            <img src="#" alt="Alternate Text" />
+            <img src="#" alt="Alternate Text" />
+
         </div>
     </div>
 </div>
