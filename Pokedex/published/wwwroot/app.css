@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+.decor-poke1 {
+    background-image: url(images/pokeboll-icon.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-position: -90px -55px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.decor-poke2 {
+    background-image: url(images/pokeboll-icon.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-position: 75% -205px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.decor-poke3 {
+    background-image: url(images/pokeboll-icon.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-position: calc(100% + 144px) 143px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+input {
+    color: #C9B3B3 !important;
+    font-family: "Kumbh Sans" !important;
+    font-size: 20px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+    padding-left: 24px !important;
+    position: static;
+    z-index: 2;
+}
+
+@media (max-width:576px) {
+    .decor-poke2 {
+        display: none;
+    }
+
+    .decor-poke3 {
+        position: absolute;
+        background-position: calc(100% + 144px) 350px;
+    }
+}

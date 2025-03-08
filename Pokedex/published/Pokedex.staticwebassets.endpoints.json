@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "ManifestType": "Build",
+  "ManifestType": "Publish",
   "Endpoints": [
     {
       "Route": "Pokedex.styles.css",
@@ -25,22 +25,22 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"50lrHoDt84lnpMGBa9igJkdhWqqdaSOFy4vptFOAaPs=\""
+          "Value": "\"G9I5c1r64V9v9IrOyYfiHaiNQfQIksDxpp0KDIa6LGA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+          "Value": "Sat, 08 Mar 2025 20:38:18 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-50lrHoDt84lnpMGBa9igJkdhWqqdaSOFy4vptFOAaPs="
+          "Value": "sha256-G9I5c1r64V9v9IrOyYfiHaiNQfQIksDxpp0KDIa6LGA="
         }
       ]
     },
     {
-      "Route": "Pokedex.z55n4n9wkz.styles.css",
+      "Route": "Pokedex.vrfpmgu7qy.styles.css",
       "AssetFile": "Pokedex.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -62,21 +62,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"50lrHoDt84lnpMGBa9igJkdhWqqdaSOFy4vptFOAaPs=\""
+          "Value": "\"G9I5c1r64V9v9IrOyYfiHaiNQfQIksDxpp0KDIa6LGA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+          "Value": "Sat, 08 Mar 2025 20:38:18 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "z55n4n9wkz"
+          "Value": "vrfpmgu7qy"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-50lrHoDt84lnpMGBa9igJkdhWqqdaSOFy4vptFOAaPs="
+          "Value": "sha256-G9I5c1r64V9v9IrOyYfiHaiNQfQIksDxpp0KDIa6LGA="
         },
         {
           "Name": "label",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/Q8sCevR94hkMnp/4qmEV0FBxh+Qw/0fnSKTuLhXeg4=",
+  "Hash": "+YxDqthngOdu0FQlRWwGAlP5PNpKcwTX7YK3ruINOsc=",
   "Source": "Pokedex",
   "BasePath": "_content/Pokedex",
   "Mode": "Default",
@@ -8,21 +8,21 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "Pokedex/wwwroot",
+      "Name": "Pokedex\\wwwroot",
       "Source": "Pokedex",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/",
+      "ContentRoot": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\",
       "BasePath": "_content/Pokedex",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/home/jason/RiderProjects/Pokedex/Pokedex/obj/Debug/net8.0/scopedcss/bundle/Pokedex.styles.css",
+      "Identity": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Pokedex.styles.css",
       "SourceId": "Pokedex",
       "SourceType": "Computed",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/obj/Debug/net8.0/scopedcss/bundle/",
+      "ContentRoot": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Pokedex",
-      "RelativePath": "Pokedex.styles.css",
+      "RelativePath": "Pokedex#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Primary",
@@ -31,17 +31,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "z55n4n9wkz",
+      "Integrity": "50lrHoDt84lnpMGBa9igJkdhWqqdaSOFy4vptFOAaPs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/jason/RiderProjects/Pokedex/Pokedex/obj/Debug/net8.0/scopedcss/bundle/Pokedex.styles.css"
+      "OriginalItemSpec": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Pokedex.styles.css"
     },
     {
-      "Identity": "/home/jason/RiderProjects/Pokedex/Pokedex/obj/Debug/net8.0/scopedcss/projectbundle/Pokedex.bundle.scp.css",
+      "Identity": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Pokedex.bundle.scp.css",
       "SourceId": "Pokedex",
       "SourceType": "Computed",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/obj/Debug/net8.0/scopedcss/projectbundle/",
+      "ContentRoot": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Pokedex",
-      "RelativePath": "Pokedex.bundle.scp.css",
+      "RelativePath": "Pokedex#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Primary",
@@ -50,161 +52,1310 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "z55n4n9wkz",
+      "Integrity": "50lrHoDt84lnpMGBa9igJkdhWqqdaSOFy4vptFOAaPs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/jason/RiderProjects/Pokedex/Pokedex/obj/Debug/net8.0/scopedcss/projectbundle/Pokedex.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Pokedex.bundle.scp.css"
     },
     {
-      "Identity": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/app.css",
+      "Identity": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\app.css",
       "SourceId": "Pokedex",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/",
+      "ContentRoot": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\",
       "BasePath": "_content/Pokedex",
-      "RelativePath": "app.css",
+      "RelativePath": "app#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "5tjrjosynp",
+      "Integrity": "CTB/Uf023N0DuI0eRQ7g3jUEQK48mjF1vTVqCoJvXZQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/app.css"
+      "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/favicon.png",
+      "Identity": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\favicon.png",
       "SourceId": "Pokedex",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/",
+      "ContentRoot": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\",
       "BasePath": "_content/Pokedex",
-      "RelativePath": "favicon.png",
+      "RelativePath": "favicon#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "ifv42okdf2",
+      "Integrity": "4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/favicon.png"
+      "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/images/download.svg",
+      "Identity": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\arrow-right.svg",
       "SourceId": "Pokedex",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/",
+      "ContentRoot": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\",
       "BasePath": "_content/Pokedex",
-      "RelativePath": "images/download.svg",
+      "RelativePath": "images/arrow-right#[.{fingerprint}]?.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "sihtm22f2e",
+      "Integrity": "DARU+rkblhOg01Qvl+crvjT+CeiMj0JkiRQPKAL9n3E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/download.svg"
+      "OriginalItemSpec": "wwwroot\\images\\arrow-right.svg"
     },
     {
-      "Identity": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/images/image-example.gif",
+      "Identity": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\download.svg",
       "SourceId": "Pokedex",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/",
+      "ContentRoot": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\",
       "BasePath": "_content/Pokedex",
-      "RelativePath": "images/image-example.gif",
+      "RelativePath": "images/download#[.{fingerprint}]?.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "uyfpger4sn",
+      "Integrity": "FtV4DicKn/cTemLFbszNo58pOwGszNCdsXy/160bk6I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/image-example.gif"
+      "OriginalItemSpec": "wwwroot\\images\\download.svg"
     },
     {
-      "Identity": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/images/menu.png",
+      "Identity": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\image-example.gif",
       "SourceId": "Pokedex",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/",
+      "ContentRoot": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\",
       "BasePath": "_content/Pokedex",
-      "RelativePath": "images/menu.png",
+      "RelativePath": "images/image-example#[.{fingerprint}]?.gif",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "3edc2sj2x8",
+      "Integrity": "NU9OdObD3+Ws/AdYcHwH0Hku9ZJ5HQWkPf3ewT80y5M=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/menu.png"
+      "OriginalItemSpec": "wwwroot\\images\\image-example.gif"
     },
     {
-      "Identity": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/images/pokeboll-icon.svg",
+      "Identity": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\menu.png",
       "SourceId": "Pokedex",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/",
+      "ContentRoot": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\",
       "BasePath": "_content/Pokedex",
-      "RelativePath": "images/pokeboll-icon.svg",
+      "RelativePath": "images/menu#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "48c7958uui",
+      "Integrity": "XOmk6zhH6Gqq3qclUXzJ4czFf6dol3VQnle3y0zH7N0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/pokeboll-icon.svg"
+      "OriginalItemSpec": "wwwroot\\images\\menu.png"
     },
     {
-      "Identity": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/images/pokedex_img.png",
+      "Identity": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\pokeball.png",
       "SourceId": "Pokedex",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/",
+      "ContentRoot": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\",
       "BasePath": "_content/Pokedex",
-      "RelativePath": "images/pokedex_img.png",
+      "RelativePath": "images/pokeball#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "pt3vkiesss",
+      "Integrity": "HSFUPORh1bN6tCHj5YRvUfLo0e4/zT5Gm/iL2N1AkdU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/pokedex_img.png"
+      "OriginalItemSpec": "wwwroot\\images\\pokeball.png"
     },
     {
-      "Identity": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/images/search.svg",
+      "Identity": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\pokeball2.png",
       "SourceId": "Pokedex",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/jason/RiderProjects/Pokedex/Pokedex/wwwroot/",
+      "ContentRoot": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\",
       "BasePath": "_content/Pokedex",
-      "RelativePath": "images/search.svg",
+      "RelativePath": "images/pokeball2#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "7uwfbq3btd",
+      "Integrity": "ASkrY6SY63CAYpdfrSGqVTEqj7MH23k3KU8BkntDAIM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/search.svg"
+      "OriginalItemSpec": "wwwroot\\images\\pokeball2.png"
+    },
+    {
+      "Identity": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\pokeboll-icon.svg",
+      "SourceId": "Pokedex",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\",
+      "BasePath": "_content/Pokedex",
+      "RelativePath": "images/pokeboll-icon#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hgaai5tkwq",
+      "Integrity": "j1ZsyWCIOd6TrsyhXD2Wqc75nYItMCXvVknN0bMRFaM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\pokeboll-icon.svg"
+    },
+    {
+      "Identity": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\pokedex_img.png",
+      "SourceId": "Pokedex",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\",
+      "BasePath": "_content/Pokedex",
+      "RelativePath": "images/pokedex_img#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x2jk59dfyu",
+      "Integrity": "Z+lNEF+uq1HgbfCqiv3Swt9ax8woy9w71MrtdqexcKo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\pokedex_img.png"
+    },
+    {
+      "Identity": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\search.svg",
+      "SourceId": "Pokedex",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\",
+      "BasePath": "_content/Pokedex",
+      "RelativePath": "images/search#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "t25wzpgkyz",
+      "Integrity": "SxcCQN1lLBOAtcYwrgy1RF0Qng8L/XGaRp3iIIO9lPk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\search.svg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "app.5tjrjosynp.css",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1377"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CTB/Uf023N0DuI0eRQ7g3jUEQK48mjF1vTVqCoJvXZQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5tjrjosynp"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CTB/Uf023N0DuI0eRQ7g3jUEQK48mjF1vTVqCoJvXZQ="
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1377"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CTB/Uf023N0DuI0eRQ7g3jUEQK48mjF1vTVqCoJvXZQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CTB/Uf023N0DuI0eRQ7g3jUEQK48mjF1vTVqCoJvXZQ="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ifv42okdf2.png",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ifv42okdf2"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.png",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "images/arrow-right.sihtm22f2e.svg",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\arrow-right.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DARU+rkblhOg01Qvl+crvjT+CeiMj0JkiRQPKAL9n3E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 12:46:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sihtm22f2e"
+        },
+        {
+          "Name": "label",
+          "Value": "images/arrow-right.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DARU+rkblhOg01Qvl+crvjT+CeiMj0JkiRQPKAL9n3E="
+        }
+      ]
+    },
+    {
+      "Route": "images/arrow-right.svg",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\arrow-right.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DARU+rkblhOg01Qvl+crvjT+CeiMj0JkiRQPKAL9n3E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 12:46:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DARU+rkblhOg01Qvl+crvjT+CeiMj0JkiRQPKAL9n3E="
+        }
+      ]
+    },
+    {
+      "Route": "images/download.svg",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\download.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "411"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FtV4DicKn/cTemLFbszNo58pOwGszNCdsXy/160bk6I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FtV4DicKn/cTemLFbszNo58pOwGszNCdsXy/160bk6I="
+        }
+      ]
+    },
+    {
+      "Route": "images/download.uyfpger4sn.svg",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\download.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "411"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FtV4DicKn/cTemLFbszNo58pOwGszNCdsXy/160bk6I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uyfpger4sn"
+        },
+        {
+          "Name": "label",
+          "Value": "images/download.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FtV4DicKn/cTemLFbszNo58pOwGszNCdsXy/160bk6I="
+        }
+      ]
+    },
+    {
+      "Route": "images/image-example.3edc2sj2x8.gif",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\image-example.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19484"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NU9OdObD3+Ws/AdYcHwH0Hku9ZJ5HQWkPf3ewT80y5M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3edc2sj2x8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/image-example.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NU9OdObD3+Ws/AdYcHwH0Hku9ZJ5HQWkPf3ewT80y5M="
+        }
+      ]
+    },
+    {
+      "Route": "images/image-example.gif",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\image-example.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19484"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NU9OdObD3+Ws/AdYcHwH0Hku9ZJ5HQWkPf3ewT80y5M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NU9OdObD3+Ws/AdYcHwH0Hku9ZJ5HQWkPf3ewT80y5M="
+        }
+      ]
+    },
+    {
+      "Route": "images/menu.48c7958uui.png",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\menu.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "161"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XOmk6zhH6Gqq3qclUXzJ4czFf6dol3VQnle3y0zH7N0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "48c7958uui"
+        },
+        {
+          "Name": "label",
+          "Value": "images/menu.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XOmk6zhH6Gqq3qclUXzJ4czFf6dol3VQnle3y0zH7N0="
+        }
+      ]
+    },
+    {
+      "Route": "images/menu.png",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\menu.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "161"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XOmk6zhH6Gqq3qclUXzJ4czFf6dol3VQnle3y0zH7N0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XOmk6zhH6Gqq3qclUXzJ4czFf6dol3VQnle3y0zH7N0="
+        }
+      ]
+    },
+    {
+      "Route": "images/pokeball.png",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\pokeball.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57765"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HSFUPORh1bN6tCHj5YRvUfLo0e4/zT5Gm/iL2N1AkdU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 06:17:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HSFUPORh1bN6tCHj5YRvUfLo0e4/zT5Gm/iL2N1AkdU="
+        }
+      ]
+    },
+    {
+      "Route": "images/pokeball.pt3vkiesss.png",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\pokeball.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57765"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HSFUPORh1bN6tCHj5YRvUfLo0e4/zT5Gm/iL2N1AkdU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 06:17:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pt3vkiesss"
+        },
+        {
+          "Name": "label",
+          "Value": "images/pokeball.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HSFUPORh1bN6tCHj5YRvUfLo0e4/zT5Gm/iL2N1AkdU="
+        }
+      ]
+    },
+    {
+      "Route": "images/pokeball2.7uwfbq3btd.png",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\pokeball2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "61143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ASkrY6SY63CAYpdfrSGqVTEqj7MH23k3KU8BkntDAIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 06:47:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7uwfbq3btd"
+        },
+        {
+          "Name": "label",
+          "Value": "images/pokeball2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ASkrY6SY63CAYpdfrSGqVTEqj7MH23k3KU8BkntDAIM="
+        }
+      ]
+    },
+    {
+      "Route": "images/pokeball2.png",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\pokeball2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "61143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ASkrY6SY63CAYpdfrSGqVTEqj7MH23k3KU8BkntDAIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 06:47:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ASkrY6SY63CAYpdfrSGqVTEqj7MH23k3KU8BkntDAIM="
+        }
+      ]
+    },
+    {
+      "Route": "images/pokeboll-icon.hgaai5tkwq.svg",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\pokeboll-icon.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40691"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j1ZsyWCIOd6TrsyhXD2Wqc75nYItMCXvVknN0bMRFaM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hgaai5tkwq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/pokeboll-icon.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j1ZsyWCIOd6TrsyhXD2Wqc75nYItMCXvVknN0bMRFaM="
+        }
+      ]
+    },
+    {
+      "Route": "images/pokeboll-icon.svg",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\pokeboll-icon.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40691"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j1ZsyWCIOd6TrsyhXD2Wqc75nYItMCXvVknN0bMRFaM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j1ZsyWCIOd6TrsyhXD2Wqc75nYItMCXvVknN0bMRFaM="
+        }
+      ]
+    },
+    {
+      "Route": "images/pokedex_img.png",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\pokedex_img.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32279"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z+lNEF+uq1HgbfCqiv3Swt9ax8woy9w71MrtdqexcKo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z+lNEF+uq1HgbfCqiv3Swt9ax8woy9w71MrtdqexcKo="
+        }
+      ]
+    },
+    {
+      "Route": "images/pokedex_img.x2jk59dfyu.png",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\pokedex_img.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32279"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z+lNEF+uq1HgbfCqiv3Swt9ax8woy9w71MrtdqexcKo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x2jk59dfyu"
+        },
+        {
+          "Name": "label",
+          "Value": "images/pokedex_img.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z+lNEF+uq1HgbfCqiv3Swt9ax8woy9w71MrtdqexcKo="
+        }
+      ]
+    },
+    {
+      "Route": "images/search.svg",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\search.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1026"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SxcCQN1lLBOAtcYwrgy1RF0Qng8L/XGaRp3iIIO9lPk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SxcCQN1lLBOAtcYwrgy1RF0Qng8L/XGaRp3iIIO9lPk="
+        }
+      ]
+    },
+    {
+      "Route": "images/search.t25wzpgkyz.svg",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\wwwroot\\images\\search.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1026"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SxcCQN1lLBOAtcYwrgy1RF0Qng8L/XGaRp3iIIO9lPk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t25wzpgkyz"
+        },
+        {
+          "Name": "label",
+          "Value": "images/search.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SxcCQN1lLBOAtcYwrgy1RF0Qng8L/XGaRp3iIIO9lPk="
+        }
+      ]
+    },
+    {
+      "Route": "Pokedex.bundle.scp.css",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Pokedex.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "132"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"50lrHoDt84lnpMGBa9igJkdhWqqdaSOFy4vptFOAaPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-50lrHoDt84lnpMGBa9igJkdhWqqdaSOFy4vptFOAaPs="
+        }
+      ]
+    },
+    {
+      "Route": "Pokedex.styles.css",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Pokedex.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "132"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"50lrHoDt84lnpMGBa9igJkdhWqqdaSOFy4vptFOAaPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-50lrHoDt84lnpMGBa9igJkdhWqqdaSOFy4vptFOAaPs="
+        }
+      ]
+    },
+    {
+      "Route": "Pokedex.z55n4n9wkz.bundle.scp.css",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Pokedex.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "132"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"50lrHoDt84lnpMGBa9igJkdhWqqdaSOFy4vptFOAaPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z55n4n9wkz"
+        },
+        {
+          "Name": "label",
+          "Value": "Pokedex.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-50lrHoDt84lnpMGBa9igJkdhWqqdaSOFy4vptFOAaPs="
+        }
+      ]
+    },
+    {
+      "Route": "Pokedex.z55n4n9wkz.styles.css",
+      "AssetFile": "C:\\Users\\aluga.com\\source\\repos\\JasonLuis\\pokedex\\Pokedex\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Pokedex.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "132"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"50lrHoDt84lnpMGBa9igJkdhWqqdaSOFy4vptFOAaPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 19:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z55n4n9wkz"
+        },
+        {
+          "Name": "label",
+          "Value": "Pokedex.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-50lrHoDt84lnpMGBa9igJkdhWqqdaSOFy4vptFOAaPs="
+        }
+      ]
     }
   ]
 }

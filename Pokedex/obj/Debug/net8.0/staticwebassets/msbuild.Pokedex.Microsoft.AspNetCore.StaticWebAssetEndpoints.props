@@ -24,6 +24,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1148"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00224mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\u0022"},{"Name":"Last-Modified","Value":"Wed, 05 Mar 2025 19:07:55 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Pokedex/images/arrow-right.sihtm22f2e.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\arrow-right.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"sihtm22f2e"},{"Name":"integrity","Value":"sha256-DARU\u002BrkblhOg01Qvl\u002BcrvjT\u002BCeiMj0JkiRQPKAL9n3E="},{"Name":"label","Value":"_content/Pokedex/images/arrow-right.svg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"236"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022DARU\u002BrkblhOg01Qvl\u002BcrvjT\u002BCeiMj0JkiRQPKAL9n3E=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 12:46:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Pokedex/images/arrow-right.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\arrow-right.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-DARU\u002BrkblhOg01Qvl\u002BcrvjT\u002BCeiMj0JkiRQPKAL9n3E="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"236"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022DARU\u002BrkblhOg01Qvl\u002BcrvjT\u002BCeiMj0JkiRQPKAL9n3E=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 12:46:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokedex/images/download.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\download.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -59,6 +71,30 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-XOmk6zhH6Gqq3qclUXzJ4czFf6dol3VQnle3y0zH7N0="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"161"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022XOmk6zhH6Gqq3qclUXzJ4czFf6dol3VQnle3y0zH7N0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 05 Mar 2025 19:07:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Pokedex/images/pokeball.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\pokeball.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-HSFUPORh1bN6tCHj5YRvUfLo0e4/zT5Gm/iL2N1AkdU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"57765"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022HSFUPORh1bN6tCHj5YRvUfLo0e4/zT5Gm/iL2N1AkdU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 06:17:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Pokedex/images/pokeball.pt3vkiesss.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\pokeball.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"pt3vkiesss"},{"Name":"integrity","Value":"sha256-HSFUPORh1bN6tCHj5YRvUfLo0e4/zT5Gm/iL2N1AkdU="},{"Name":"label","Value":"_content/Pokedex/images/pokeball.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"57765"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022HSFUPORh1bN6tCHj5YRvUfLo0e4/zT5Gm/iL2N1AkdU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 06:17:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Pokedex/images/pokeball2.7uwfbq3btd.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\pokeball2.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7uwfbq3btd"},{"Name":"integrity","Value":"sha256-ASkrY6SY63CAYpdfrSGqVTEqj7MH23k3KU8BkntDAIM="},{"Name":"label","Value":"_content/Pokedex/images/pokeball2.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"61143"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022ASkrY6SY63CAYpdfrSGqVTEqj7MH23k3KU8BkntDAIM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 06:47:09 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Pokedex/images/pokeball2.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\pokeball2.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ASkrY6SY63CAYpdfrSGqVTEqj7MH23k3KU8BkntDAIM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"61143"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022ASkrY6SY63CAYpdfrSGqVTEqj7MH23k3KU8BkntDAIM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 06:47:09 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pokedex/images/pokeboll-icon.hgaai5tkwq.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\pokeboll-icon.svg'))</AssetFile>
