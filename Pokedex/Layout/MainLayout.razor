@@ -4,7 +4,10 @@
 <div class="@_css">
     <main>
         <nav class="w-full pt-11 px-14 flex justify-between items-center mb-8">
-            <img src="images/pokedex_img.png" alt="" class="w-[192px] h-[61px]"/>
+            <a href="/">
+                <img src="images/pokedex_img.png" alt="" class="w-[192px] h-[61px]" />
+            </a>
+
             <button>
                 <img src="images/menu.png" alt="" />
             </button>
@@ -13,7 +16,7 @@
     </main>
 </div>
 
-@code{
+@code {
 
     private string _css = new CssBuilder()
         .AddClass("bg-[#DD092F]")
@@ -21,5 +24,5 @@
         .AddClass("h-screen min-h-full")
         .Build();
 
-    
+
 }

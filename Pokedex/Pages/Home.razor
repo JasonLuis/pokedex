@@ -3,70 +3,68 @@
 @inject PokemonAPI pokemonService
 @inject NavigationManager Navigation
 
-
-<div class="px-4 grid lg:grid-cols-3 md:grid-cols-2 gap-4 !justify-center mx-auto max-w-[100%] md:max-w-[1100px]">
-    <div class="lg:col-span-3 md:col-span-2">
-        <div class="flex justify-center">
-            <img src="images/pokedex_img.png" class="w-[495px] h-[152px]" />
-        </div>
-    </div>
-
-    <div class="lg:col-span-3 md:col-span-2">
-        <div class="flex gap-2 mt-5 ">
-            <AppInputTextField @bind-Value="_text"
-                               Class="flex-1 h-[73px]"
-                               Placeholder="search eg, ditto or pikachu..." 
-                               />
-            <button @onclick="() => GetPokemonPorNomme()" class="bg-[#FF5350] w-[81px] h-[73px] rounded-[10px] shadow-custom flex justify-center items-center">
-                <img src="/images/search.svg" alt="" />
-            </button>
-        </div>
-
-    </div>
-
-    <hr class="lg:col-span-3 md:col-span-2" size="2" />
-
-    @if (_response.Any() == false)
-    {
+@if(!_loading){
+    <div class="px-4 grid lg:grid-cols-3 md:grid-cols-2 gap-4 !justify-center mx-auto max-w-[100%] md:max-w-[1100px]">
         <div class="lg:col-span-3 md:col-span-2">
-            <Alert>No Pokémon found!</Alert>
+            <div class="flex justify-center">
+                <img src="images/pokedex_img.png" class="w-[495px] h-[152px]" />
+            </div>
         </div>
-        
-    }
 
-    @foreach (var pokemon in _response)
-    {
-        <CardInfo 
-            Id="@pokemon.Id"
-            Nome="@pokemon.Nome"
-            Imagem="@pokemon.Imagem"
-            Tipo="@pokemon.Tipos"
-            Descricao="@pokemon.Descricao"
-            />
-    }
-    <div class="lg:col-span-3 md:col-span-2">
-        <div class="flex justify-center gap-2 mb-5 mt-5">
-            <button @onclick="() => GetPokemons(_anterior!)"
-               class="inline-flex items-center border border-indigo-300 px-3 py-1.5 rounded-md text-white bg-[#FF5350] hover:bg-white hover:text-[#FF5350]">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18">
-                    </path>
-                </svg>
-                <span class="ml-1 font-bold text-lg"></span>
-            </button>
-            
-            <button @onclick="() => GetPokemons(_proximo!)"
-               class="inline-flex items-center border border-indigo-300 px-3 py-1.5 rounded-md text-white bg-[#FF5350] hover:bg-white hover:text-[#FF5350]">
-                <span class="mr-1 font-bold text-lg"></span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3">
-                    </path>
-                </svg>
-            </button>
+        <div class="lg:col-span-3 md:col-span-2">
+            <div class="flex gap-2 mt-5 ">
+                <AppInputTextField @bind-Value="_text"
+                                   Class="flex-1 h-[73px]"
+                                   Placeholder="search eg, ditto or pikachu..." />
+                <button @onclick="() => GetPokemonPorNomme()" class="bg-[#FF5350] w-[81px] h-[73px] rounded-[10px] shadow-custom flex justify-center items-center">
+                    <img src="/images/search.svg" alt="" />
+                </button>
+            </div>
+
         </div>
+
+        <hr class="lg:col-span-3 md:col-span-2" size="2" />
+
+        @if (_response.Any() == false)
+        {
+            <div class="lg:col-span-3 md:col-span-2">
+                <Alert>No Pokémon found!</Alert>
+            </div>
+
+        }
+
+        @foreach (var pokemon in _response)
+        {
+            <CardInfo Id="@pokemon.Id"
+                      Nome="@pokemon.Nome"
+                      Imagem="@pokemon.Imagem"
+                      Tipo="@pokemon.Tipos"
+                      Descricao="@pokemon.Descricao" />
+        }
+        <div class="lg:col-span-3 md:col-span-2">
+            <div class="flex justify-center gap-2 mb-5 mt-5">
+                <button @onclick="() => GetPokemons(_anterior!)"
+                        class="inline-flex items-center border border-indigo-300 px-3 py-1.5 rounded-md text-white bg-[#FF5350] hover:bg-white hover:text-[#FF5350]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18">
+                        </path>
+                    </svg>
+                    <span class="ml-1 font-bold text-lg"></span>
+                </button>
+
+                <button @onclick="() => GetPokemons(_proximo!)"
+                        class="inline-flex items-center border border-indigo-300 px-3 py-1.5 rounded-md text-white bg-[#FF5350] hover:bg-white hover:text-[#FF5350]">
+                    <span class="mr-1 font-bold text-lg"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
     </div>
-    
-</div>
+}
 
 <Loading Show="@_loading" />
 
