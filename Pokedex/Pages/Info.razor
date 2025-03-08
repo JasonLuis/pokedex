@@ -5,105 +5,128 @@
 @using BlazorComponentUtilities
 @using Pokedex.APIs.PokemonInfo
 
-<div class="mx-auto max-w-[100%] max-w-[1071px]">
+<div class="mx-auto max-w-[100%] max-w-[1071px] mb-5">
 
     <div class="w-[380px] sm:w-5/6 mx-auto rounded-[20px]
-        bg-[#77B35B] flex items-center gap-2 px-[20px] py-[29px] flex-wrap lg:flex-nowrap justify-center md:justify-normal">
+        bg-[#77B35B] flex items-center gap-2 px-[20px] py-[30px] flex-wrap lg:flex-nowrap justify-center md:justify-between">
 
-        <img class="sm:w-[450px] sm:h-[483px] w-[200px] min-h-[205px]"
-             src="@_pokemonDetalhes.Imagem" alt="pokemon" />
-
-        <div>
-            <p class="text-[#fff] text-[15px] font-bold"> @($"#{_pokemonDetalhes.Id:D3}")</p>
-            <h3 class="text-[#fff] text-[40px] font-bold">@_pokemonDetalhes.Nome?.ToUpper()</h3>
-            <div class="flex gap-2">
-                @foreach (var tipo in _pokemonDetalhes.Tipos)
-                {
-                    <BtnType Class="mt-3">
-                        @tipo.Tipo
-                    </BtnType>
-                }
-            </div>
-            <p class="text-[#fff] text-[13px] font-normal mt-[19px]">
-                @_pokemonDetalhes.Descricao
-            </p>
-
-            <div class="flex gap-2 flex-wrap mt-8">
-                <StatsBox>
-                    <span>
-                        <strong>Heigth</strong>
-                    </span>
-                    <span>@($"{_pokemonDetalhes.Altura}m")</span>
-                </StatsBox>
-                <StatsBox>
-                    <span>
-                        <strong>Weight</strong>
-                    </span>
-                    <span>@($"{_pokemonDetalhes.Peso}m")</span>
-                </StatsBox>
+        <div class="grid grid-cols-2 w-full">
+            <div class="flex items-center justify-center col-span-2 md:col-span-1">
+                <img class="sm:w-[350px] sm:h-[383px] w-[200px] min-h-[205px]"
+                     src="@_pokemonDetalhes.Imagem" alt="pokemon" />
             </div>
 
-            <h4 class="text-white font-bold text-[22px] mt-8">Stats</h4>
-            <div class="flex gap-2 flex-wrap">
-                <StatsBox Class="mt-3 justify-between" Stats="StatsType.HP">
-                    <span>
-                        <strong>HP</strong>
-                    </span>
-                    <span>@_pokemonDetalhes.Estatisticas.HP</span>
-                </StatsBox>
-                <StatsBox Class="mt-3 justify-between" Stats="StatsType.ATK">
-                    <span>
-                        <strong>ATK</strong>
-                    </span>
-                    <span>@_pokemonDetalhes.Estatisticas.Ataque</span>
-                </StatsBox>
-                <StatsBox Class="mt-3 justify-between" Stats="StatsType.DEF">
-                    <span>
-                        <strong>DEF</strong>
-                    </span>
-                    <span>@_pokemonDetalhes.Estatisticas.Defesa</span>
-                </StatsBox>
-                <StatsBox Class="mt-3 justify-between" Stats="StatsType.SPA">
-                    <span>
-                        <strong>SpA</strong>
-                    </span>
-                    <span>@_pokemonDetalhes.Estatisticas.AtaqueEspecial</span>
-                </StatsBox>
-                <StatsBox Class="mt-3 justify-between" Stats="StatsType.SpD">
-                    <span>
-                        <strong>SpD</strong>
-                    </span>
-                    <span>@_pokemonDetalhes.Estatisticas.DefesaEspecial</span>
-                </StatsBox>
-                <StatsBox Class="mt-3 justify-between" Stats="StatsType.SPD">
-                    <span>
-                        <strong>SPD</strong>
-                    </span>
-                    <span>@_pokemonDetalhes.Estatisticas.Velocidade</span>
-                </StatsBox>
-            </div>
+            <div class="flex items-center justify-center col-span-2 md:col-span-1">
+                <div class="max-w-[350px]">
+                    <p class="text-[#fff] text-[15px] font-bold"> @($"#{_pokemonDetalhes.Id:D3}")</p>
+                    <h3 class="text-[#fff] text-[40px] font-bold">@_pokemonDetalhes.Nome?.ToUpper()</h3>
+                    <div class="flex gap-2">
+                        @foreach (var tipo in _pokemonDetalhes.Tipos)
+                        {
+                            <BtnType Class="mt-3">
+                                @tipo.Tipo
+                            </BtnType>
+                        }
+                    </div>
+                    <p class="text-[#fff] text-[13px] font-normal mt-[19px]">
+                        @_pokemonDetalhes.Descricao
+                    </p>
 
-            <h4 class="text-white font-bold text-[22px] mt-8">Abilities</h4>
-            <div class="flex gap-2 flex-wrap mt-5">
-                @foreach (var habilidade in _pokemonDetalhes.Habilidades)
-                {
-                    <StatsBox Class="justify-center">
-                        <strong>@habilidade.Habilidade</strong>
-                    </StatsBox>
-                }
+                    <div class="flex gap-2 flex-wrap mt-8">
+                        <StatsBox>
+                            <span>
+                                <strong>Heigth</strong>
+                            </span>
+                            <span>@($"{_pokemonDetalhes.Altura}m")</span>
+                        </StatsBox>
+                        <StatsBox>
+                            <span>
+                                <strong>Weight</strong>
+                            </span>
+                            <span>@($"{_pokemonDetalhes.Peso}m")</span>
+                        </StatsBox>
+                    </div>
+
+                    <h4 class="text-white font-bold text-[22px] mt-8">Stats</h4>
+                    <div class="flex gap-2 flex-wrap">
+                        <StatsBox Class="mt-3 justify-between" Stats="StatsType.HP">
+                            <span>
+                                <strong>HP</strong>
+                            </span>
+                            <span>@_pokemonDetalhes.Estatisticas.HP</span>
+                        </StatsBox>
+                        <StatsBox Class="mt-3 justify-between" Stats="StatsType.ATK">
+                            <span>
+                                <strong>ATK</strong>
+                            </span>
+                            <span>@_pokemonDetalhes.Estatisticas.Ataque</span>
+                        </StatsBox>
+                        <StatsBox Class="mt-3 justify-between" Stats="StatsType.DEF">
+                            <span>
+                                <strong>DEF</strong>
+                            </span>
+                            <span>@_pokemonDetalhes.Estatisticas.Defesa</span>
+                        </StatsBox>
+                        <StatsBox Class="mt-3 justify-between" Stats="StatsType.SPA">
+                            <span>
+                                <strong>SpA</strong>
+                            </span>
+                            <span>@_pokemonDetalhes.Estatisticas.AtaqueEspecial</span>
+                        </StatsBox>
+                        <StatsBox Class="mt-3 justify-between" Stats="StatsType.SpD">
+                            <span>
+                                <strong>SpD</strong>
+                            </span>
+                            <span>@_pokemonDetalhes.Estatisticas.DefesaEspecial</span>
+                        </StatsBox>
+                        <StatsBox Class="mt-3 justify-between" Stats="StatsType.SPD">
+                            <span>
+                                <strong>SPD</strong>
+                            </span>
+                            <span>@_pokemonDetalhes.Estatisticas.Velocidade</span>
+                        </StatsBox>
+                    </div>
+
+                    <h4 class="text-white font-bold text-[22px] mt-8">Abilities</h4>
+                    <div class="flex gap-2 flex-wrap mt-5">
+
+                        @foreach (var habilidade in _pokemonDetalhes.Habilidades)
+                        {
+                            <StatsBox Class="justify-center">
+                                <strong>@habilidade.Habilidade</strong>
+                            </StatsBox>
+                        }
+
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
 
-    <div class="w-5/6 mx-auto px-[30px] mt-8 font-['Kumbh Sans']">
+    <div class="w-5/6 mx-auto my-8 font-['Kumbh Sans']">
         <h2 class="text-white text-[42px] font-bold">Evolutions</h2>
-        <div class="flex justify-center">
+        <div class="flex justify-between items-center pl-0 md:pl-8">
 
-            <img src="#" alt="Alternate Text" />
-            <img src="#" alt="Alternate Text" />
-            <img src="#" alt="Alternate Text" />
-            <img src="#" alt="Alternate Text" />
-            <img src="#" alt="Alternate Text" />
+            @if (_pokemonDetalhes!.Evolucoes.Any())
+            {
+                @if (_pokemonDetalhes.Evolucoes.Count > 0 && _pokemonDetalhes.Evolucoes[0].Imagem is not null)
+                {
+                    <img class="w-[71px] h-[72px]" src="@_pokemonDetalhes.Evolucoes[0].Imagem" alt="Alternate Text" />
+                }
+
+                @if (_pokemonDetalhes.Evolucoes.Count > 1 && _pokemonDetalhes.Evolucoes[1].Imagem is not null)
+                {
+                    <img class="w-[48px] h-[48px]" src="/images/arrow-right.svg" alt="arrow right" />
+                    <img class="w-[103px] h-[106px]" src="@_pokemonDetalhes.Evolucoes[1].Imagem" alt="Alternate Text" />
+                }
+
+                @if (_pokemonDetalhes.Evolucoes.Count > 2 && _pokemonDetalhes.Evolucoes[2].Imagem is not null)
+                {
+                    <img class="w-[48px] h-[48px]" src="/images/arrow-right.svg" alt="arrow right" />
+                    <img class="w-[161px] h-[163px]" src="@_pokemonDetalhes.Evolucoes[2].Imagem" alt="Alternate Text" />
+                }
+            }
 
         </div>
     </div>
@@ -126,5 +149,7 @@
     public async Task ObterPokemonPorId()
     {
         _pokemonDetalhes = await pokemonService.GetPokemonDetalhes(null, Id);
+
+        _pokemonDetalhes.Evolucoes = await pokemonService.Evolucaos(_pokemonDetalhes.Id);
     }
 }

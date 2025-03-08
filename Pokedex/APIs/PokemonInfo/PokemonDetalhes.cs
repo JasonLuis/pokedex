@@ -16,6 +16,8 @@ public class PokemonDetalhes
 
     public decimal Altura { get; set; }
     public decimal Peso { get; set; }
+
+    public List<Evolucao> Evolucoes { get; set; } = [];
 }
 
 public class Tipos
@@ -36,4 +38,10 @@ public class Estatisticas
     public int AtaqueEspecial { get; set; }
     public int DefesaEspecial { get; set; }
     public int Velocidade { get; set; }
+}
+
+public class Evolucao
+{
+    public string? Nome { get; set; } = string.Empty;
+    public string? Imagem { get; set; } = string.Empty;
 }

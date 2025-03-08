@@ -1,7 +1,9 @@
 ﻿using Pokedex.APIs.ListarPokemons;
 using Pokedex.APIs.PokemonInfo;
 using System;
+using System.Security.Claims;
 using System.Text.Json;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Pokedex.API;
 
@@ -23,7 +25,8 @@ public class PokemonAPI
         if (url is null || url == string.Empty)
         {
             response = await _httpClient.GetFromJsonAsync<ListarPokemonsResponse>("pokemon?limit=9&offset=0");
-        } else
+        }
+        else
         {
             response = await _httpClient.GetFromJsonAsync<ListarPokemonsResponse>(url);
         }
@@ -37,8 +40,8 @@ public class PokemonAPI
         var tasks = response!.Resultado.Select(x => GetPokemonDetalhes(x.Url));
         var results = await Task.WhenAll(tasks);
         pokemons.AddRange(results);
-        
-       
+
+
 
         return (pokemons, Anterior, Proximo);
     }
@@ -49,7 +52,7 @@ public class PokemonAPI
         var urlPokemon = url ?? $"https://pokeapi.co/api/v2/pokemon/{id}/";
 
         var pokemonResponse = await _httpClient.GetStringAsync(urlPokemon);
-        
+
         PokemonDetalhes pokemon = new();
         var json = JsonDocument.Parse(pokemonResponse);
 
@@ -73,7 +76,7 @@ public class PokemonAPI
 
         pokemon.Descricao = await GetDescricaoPokemon(pokemon.Id);
 
-        pokemon.Altura = (decimal)json.RootElement.GetProperty("height").GetInt32() / 10; 
+        pokemon.Altura = (decimal)json.RootElement.GetProperty("height").GetInt32() / 10;
         pokemon.Peso = (decimal)json.RootElement.GetProperty("weight").GetDecimal() / 10;
 
         if (json.RootElement.TryGetProperty("types", out JsonElement typesElementToTypes))
@@ -123,7 +126,7 @@ public class PokemonAPI
                         break;
                 }
             }
-            
+
             pokemon.Estatisticas = estatisticas;
         }
 
@@ -162,6 +165,82 @@ public class PokemonAPI
 
         return pokemons;
     }
+
+
+    public async Task<List<Evolucao>> Evolucaos(int id)
+    {
+        var especie = await _httpClient.GetStringAsync($"https://pokeapi.co/api/v2/pokemon-species/{id}/");
+
+        if (especie is not null)
+        {
+            var json = JsonDocument.Parse(especie);
+            var urlCadeiaEvolucao = json.RootElement
+                                        .GetProperty("evolution_chain")
+                                        .GetProperty("url")
+                                        .GetString();
+
+            var cadeiaEvolucaoResponse = await _httpClient.GetStringAsync(urlCadeiaEvolucao!);
+
+            if(cadeiaEvolucaoResponse is not null)
+            {
+                var jsonCadeiaEvolucao = JsonDocument.Parse(cadeiaEvolucaoResponse);
+
+                var evolucoesExtraidas = await ExtrairEvolucoes(jsonCadeiaEvolucao.RootElement.GetProperty("chain"));
+
+                if(evolucoesExtraidas is not null)
+                {
+                    return evolucoesExtraidas;
+                }
+            }
+        }
+
+        return new List<Evolucao>();
+    }
+
+    private async Task<List<Evolucao>> ExtrairEvolucoes(JsonElement chain)
+    {
+        var evolucoes = new List<Evolucao>();
+
+        // Obtém o nome e a URL do Pokémon atual
+        var nome = chain.GetProperty("species")
+                        .GetProperty("name").GetString();
+       evolucoes.Add(new Evolucao
+       {
+            Nome = nome!,
+            Imagem = await ExtrairImagem(nome!)
+       });
+
+        // Verifica se há evoluções
+        if (chain.TryGetProperty("evolves_to", out JsonElement evoluiPara) && evoluiPara.GetArrayLength() > 0)
+        {
+            foreach (var evolution in evoluiPara.EnumerateArray())
+            {
+                evolucoes.AddRange(await ExtrairEvolucoes(evolution));
+            }
+        }
+
+        return evolucoes;
+    }
+
+    private async Task<string> ExtrairImagem(string nome)
+    {
+        var response = await _httpClient.GetStringAsync($"https://pokeapi.co/api/v2/pokemon/{nome}/");
+
+        var json = JsonDocument.Parse(response);
+
+        if(json is not null)
+        {
+            var imagem = json.RootElement
+                             .GetProperty("sprites")
+                             .GetProperty("front_default")
+                             .GetString();
+
+            if (imagem is not null)
+            {
+                return imagem;
+            }
+        }
+
+        return string.Empty;
+    }
 }
-
-
