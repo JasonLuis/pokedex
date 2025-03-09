@@ -1,6 +1,6 @@
 # Pokédex - Blazor WebApp
 
-![Pokedex](./{E2EB8B0C-9F08-4A93-B126-762BA7945151}.png)
+![Pokedex](./image/home.png)
 
 Este é um WebApp desenvolvido em Blazor com .NET 8 que consome a [PokéAPI](https://pokeapi.co/).  
 O projeto permite buscar e visualizar informações detalhadas sobre os Pokémon, incluindo seus status, habilidades e evoluções.
