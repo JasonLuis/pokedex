@@ -26,7 +26,7 @@ O projeto permite buscar e visualizar informações detalhadas sobre os Pokémon
 ![Home](./image/home.png)
 
 ### 📊 Página de Detalhes do Pokémon
-![Detalhes](./image/home.png)
+![Detalhes](./image/detalhes.png)
 
 ## 🚀 Como Rodar o Projeto
 
