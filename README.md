@@ -1,6 +1,3 @@
-Aqui está um arquivo `README.md` para o seu projeto Pokedex em Blazor. Ele inclui uma introdução, tecnologias usadas, funcionalidades e as imagens que você enviou.  
-
-```markdown
 # Pokédex - Blazor WebApp
 
 ![Pokedex](./{E2EB8B0C-9F08-4A93-B126-762BA7945151}.png)
@@ -58,4 +55,3 @@ O projeto permite buscar e visualizar informações detalhadas sobre os Pokémon
 ---
 
 🛠️ **Desenvolvido por Jason Luis** 🚀
-```
